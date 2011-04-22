@@ -1,0 +1,296 @@
+[23:21]*** Topic for #emacs: Hokey languages and ancient editors are no match
+           for a good IDE at your side. An IDE like Emacs. | Emacs 23.3 is out
+           | http://emacswiki.org/EmacsChannelFaq | pastebot is
+           http://paste.lisp.org/ | No public logging! What happens in #emacs
+           stays in #emacs
+       *** #emacs: topic set by JordiGH!~jordi@octave/developer/JordiGH,
+           10:51:25 2011/04/17
+       *** Users on #emacs: crazybaby zagkhatma L42y ymasory tensorpudding
+           zeus MaskRay dberg ijp sellout sm Vinzent ndk danthux kasimon
+           yhager gbz muneeb homie vokoda dfox aseem erez cheezus Yvemath mtk
+           pocoyo trebor_dki jlf beatak lukhas grandie Freakshow aurelien
+           illovae longfin rien emporas wbooze vcgomes tauntaun seangrove
+           xandrews adben isak markskilbeck daela myrkraverk madalu
+           pdelgallego_ pdelgallego rayners tedddd cvandusen drl joegallo
+           mbohun thunk ryankask malkomalko
+       *** Users on #emacs: Joreji xiangfu mika daimrod metasyntax` taylanub
+           corruptmemory fbru02 sentor Odin- madsy xwl novoid rdd ashawley
+           chrisb alephnull ngz sharkbird edoloughlin UrsoBranco xinming
+           Sonderblade bla fledermaus pgega tsdh fsbot` RushPL Fuco
+           rookievoice empity vds_ aisbaa madsj MartIrcTest mrBliss Euthydemus
+           kensanata jlf`` rbancroft Xeli ivan-kanis mishoo__ insomniaSalt
+           nilg churel_ mziulu mishok13 djcoin kanak Naresh Athas elarson
+           basho__ tazle `moebius`
+       *** Users on #emacs: blomqvist jorgeb jjong setheus Vodouch mrSpec
+           legumbre fisted_ letoh macrobat bignose fmu k-man hectorh30__
+           eye-scuzzy lexrex Yuuhi deselby tsp metasyntax SndChaser quasisane
+           dtaht ganbold unknown_lamer vpit3833 prip workinrella saorge
+           metaperl haesbaert rotty benny cyflea rts` mooglenorph cuba33ci
+           y3llow toby1 Sigma woozly|job texel pmade bulters tuv Brace rizumu
+           framling AimHere milkpost ae johnsu01 ivan` bzzbzz_ raavan_ barika
+           xian vert2_ Dr_Jazz
+       *** Users on #emacs: matthiasgorgens crowbar yaotti mathk swors```
+           theBlackDragon NaCl tsbtmn dufo wgreenhouse Laynef ingenious twem2
+           dezs CrrustY_ sigjuice louiz damex Modius wdouglas alip PeanutHorst
+           mathrick kvsari topi` Ydaviaorn^ mcdonc_ cods jae bremner_ Hun
+           lut4rp dleslie nunag mjv jabot stettberger levarnu rocky corecode
+           thomases GenKreton Intensity oknowton bps atomx` cschneid
+           poindontcare dropdrive jtrally damd rubydiamond rpg thursley
+           spacebat rubic fimblo sword
+       *** Users on #emacs: mattcen offby1 stepnem cataska genehack sybariten
+           sheepbat Boney raph_ael aculich aindilis murr4y cluck fading eerie
+           16SAAAXVM zjason CosmicRay tessier_ pjb incandenza mns lvh
+           paroneayea monotux McManiaC mtgto rmrf Harski jrockway pingveno
+           occamshatchet clop2 renard_ mahmoudimus tedroden danlentz sav
+           tali713 obre armenb quicksilver jayne justinlilly cthuluh sylar
+           amoe mnemonikk Natch| Riviera antoszka Dodek dueno zenwryly
+           docgnome devhost wanders hiredman
+       *** Users on #emacs: khaije|minder drewr xxtjaxx ecraven mhavas tuvwx
+           kanru cenhinen mqt flatwhatson jedediah Derander ieure c3l rudybot
+           free skangas ruediger quotemstr jhelwig ob Julien_T torbjorn tg
+           Hotwired aburgess ccm necronian c0rn rahul raek rins` mwilson
+           Nightwolf sgiessl webben edenc isomer jtg kenyon bigjust vk0
+           chipdude DraX netrom^off lusory hroptatyr dsr magcius shabble mobyu
+           boyscared bremner`` nyergler noptys Borbus TDT daleharvey ft Zol
+           Han Cope CrazyEddy
+       *** Users on #emacs: callen galdor birkenfeld marienz r4v5 monkeyiq
+           jeekl grzyda^ Obfuscate Viiru Koshian e1f timchen1` dasilvj d4gg4d
+           jaimef orbitz hgb Seb b0ef lois Kharza jlindsay nullman sebbs devn
+           avar seanw entropie tvaalen Nafai sinuc hoopy_ cmbntr_ calzifer
+           renormalist hober abeaumont colazero beneth` technomancy fds
+           AlexanderS tlockney chaoflow sshirokov Aestas Astyan_ burton qDot_
+           sunn justinweiss thijso mhatta___ krl esoda s15y Tasser eZet TTilus
+           tychoish cbmuser
+       *** Users on #emacs: xale fahadsadah Vorpal SaBer solarus hohum spike
+           zakwilson Johannes` puff literal Rapp felipe_ z0d birny Mosu
+           fschmitt kloeri ve dooglus thgrtuy_ yacoob kodein mstr ivey eN_Joy
+           hiroaki gabiruh Sketch yibe_ iderrick dxtr bmaland gnomon cpt_nemo
+           wolf_ octe nimred speakman ozzloy Schnouki jvogel andres Chalain
+           kmap jjore deadbum
+       *** #emacs URL: http://emacswiki.org/
+       *** #emacs modes: +np
+       *** #emacs was created on Sunday 2006/11/26 14:42:33
+[23:22]<jlf> combine that with tethering over 802.11 to your cell and you can
+             irc while your coworkers sit in the dark
+       <kasimon> jlf: or an UPS on the workstation.
+       <kasimon> jlf: lol
+       <milkpost> jlf: ahhhh, sorry i thought you had a gui frame on your
+                  local machine running from a server on the remote machine...
+       <crazybaby> hehe
+       <milkpost> this is still pretty cool though
+[23:23]<kasimon> My workday consists of ssh'ing to some dozen servers and
+                 doing all kind of stuff on them. Currently I'm doing this
+                 from a large gnu screen session inside urxvt.
+       *** fisted_ (~fisted@unaffiliated/fisted) is now known as fisted
+       <jlf> milkpost: that's straightforward to do. if you want the client
+             running locally you can set ,,dv server-use-tcp and if you want
+             it running remotely just launch an emacsclient on the remote
+             machine
+       <fsbot`> not documented as a variable.
+[23:24]<jlf> kasimon: you might consider sshfs as well
+       <kasimon> jlf: autossh and port forwarding could come handy there
+       <milkpost> kasimon: you could try ,cssh
+       <crazybaby> RMS
+       <kasimon> jlf: I have to run commands on the systems too, not only
+                 access files.
+[23:25]<jlf> oic
+       <kasimon> milkpost: the standalone one or the emacs implementation?
+       <milkpost> emacs implementation
+[23:26]<kasimon> milkpost: maybe worth a try. The standalone version breaks my
+                 window manager (awesome 3).
+[23:27]ERC> /join #emacs-cn
+[23:28]<kasimon> sorry, ran css-mode in my erc buffer
+       <kasimon> cssh-mode :)
+[23:32]<kasimon> cssh.el is nice
+[23:45]*** Topic for #emacs: Hokey languages and ancient editors are no match
+           for a good IDE at your side. An IDE like Emacs. | Emacs 23.3 is out
+           | http://emacswiki.org/EmacsChannelFaq | pastebot is
+           http://paste.lisp.org/ | No public logging! What happens in #emacs
+           stays in #emacs
+       *** #emacs: topic set by JordiGH!~jordi@octave/developer/JordiGH,
+           10:51:25 2011/04/17
+       *** Users on #emacs: crazybaby xandrews_ hinogi L42y kasimon am0c
+           hanDerPeder cschneid tiwula gnufied rampr ymasory tensorpudding
+           zeus ijp sellout sm Vinzent ndk danthux yhager gbz muneeb homie
+           vokoda dfox aseem erez Yvemath mtk pocoyo trebor_dki jlf beatak
+           lukhas grandie Freakshow aurelien rien emporas wbooze vcgomes
+           tauntaun seangrove isak daela myrkraverk madalu pdelgallego_
+           pdelgallego rayners tedddd cvandusen drl joegallo mbohun malkomalko
+           Joreji mika daimrod metasyntax`
+       *** Users on #emacs: taylanub corruptmemory fbru02 sentor Odin- madsy
+           novoid rdd ashawley chrisb alephnull ngz sharkbird edoloughlin
+           UrsoBranco xinming Sonderblade bla fledermaus pgega tsdh fsbot`
+           RushPL Fuco rookievoice empity vds_ aisbaa madsj MartIrcTest
+           mrBliss Euthydemus kensanata jlf`` rbancroft Xeli ivan-kanis
+           mishoo__ insomniaSalt nilg churel_ mziulu mishok13 djcoin kanak
+           Athas elarson basho__ tazle `moebius` blomqvist jjong setheus
+           Vodouch mrSpec legumbre fisted letoh
+       *** Users on #emacs: macrobat bignose fmu k-man hectorh30__ eye-scuzzy
+           lexrex Yuuhi deselby tsp metasyntax SndChaser quasisane dtaht
+           ganbold unknown_lamer vpit3833 prip workinrella saorge metaperl
+           haesbaert rotty benny cyflea rts` mooglenorph cuba33ci y3llow toby1
+           Sigma woozly|job texel pmade bulters tuv Brace rizumu framling
+           AimHere milkpost ae johnsu01 ivan` bzzbzz_ raavan_ barika xian
+           vert2_ Dr_Jazz matthiasgorgens crowbar yaotti mathk swors```
+           theBlackDragon deadbum jjore
+       *** Users on #emacs: kmap Chalain andres jvogel Schnouki ozzloy
+           speakman nimred octe wolf_ cpt_nemo gnomon bmaland dxtr iderrick
+           yibe_ Sketch gabiruh hiroaki eN_Joy ivey mstr kodein yacoob
+           thgrtuy_ dooglus ve kloeri fschmitt Mosu birny z0d felipe_ Rapp
+           literal puff Johannes` zakwilson spike hohum solarus SaBer Vorpal
+           fahadsadah xale cbmuser tychoish TTilus eZet Tasser s15y esoda krl
+           mhatta___ thijso justinweiss sunn qDot_ burton Astyan_ Aestas
+           sshirokov chaoflow tlockney
+       *** Users on #emacs: AlexanderS fds technomancy beneth` colazero
+           abeaumont hober renormalist calzifer cmbntr_ hoopy_ sinuc Nafai
+           tvaalen entropie seanw avar devn sebbs nullman jlindsay Kharza lois
+           b0ef Seb hgb orbitz jaimef d4gg4d dasilvj timchen1` e1f Koshian
+           Viiru Obfuscate grzyda^ jeekl monkeyiq r4v5 marienz birkenfeld
+           galdor callen CrazyEddy Cope Han Zol ft daleharvey TDT Borbus
+           noptys nyergler bremner`` boyscared mobyu shabble magcius dsr
+           hroptatyr lusory netrom^off DraX
+       *** Users on #emacs: chipdude vk0 bigjust kenyon jtg isomer edenc
+           webben sgiessl Nightwolf mwilson rins` raek rahul c0rn necronian
+           ccm aburgess Hotwired tg torbjorn Julien_T ob jhelwig quotemstr
+           ruediger skangas free rudybot c3l ieure Derander jedediah
+           flatwhatson mqt cenhinen kanru tuvwx mhavas ecraven xxtjaxx drewr
+           khaije|minder hiredman wanders devhost docgnome zenwryly dueno
+           Dodek antoszka Riviera Natch| mnemonikk amoe sylar cthuluh
+           justinlilly jayne quicksilver armenb obre
+       *** Users on #emacs: tali713 sav danlentz tedroden mahmoudimus renard_
+           clop2 occamshatchet pingveno jrockway Harski rmrf mtgto McManiaC
+           monotux paroneayea lvh mns incandenza pjb tessier_ CosmicRay zjason
+           16SAAAXVM eerie fading cluck murr4y aindilis aculich raph_ael Boney
+           sheepbat sybariten genehack cataska stepnem offby1 mattcen sword
+           fimblo rubic spacebat thursley rpg rubydiamond damd jtrally
+           dropdrive poindontcare atomx` bps oknowton Intensity GenKreton
+           thomases corecode
+       *** Users on #emacs: rocky levarnu stettberger jabot mjv nunag dleslie
+           lut4rp Hun bremner_ jae cods mcdonc_ Ydaviaorn^ topi` kvsari
+           mathrick PeanutHorst alip wdouglas Modius damex louiz sigjuice
+           CrrustY_ dezs twem2 ingenious Laynef wgreenhouse dufo tsbtmn NaCl
+       *** #emacs URL: http://emacswiki.org/
+[23:46]*** #emacs modes: +np
+       *** #emacs was created on Sunday 2006/11/26 14:42:33
+       <sword> Kinda screen-ish
+       <kasimon> sword: I'm currently testing cssh.el and it's quite doing
+                 what I want.
+[23:47]<offbyone> Hey, folks; hopefully a quick question here (googling didn't
+                  come up with anything canonical here): I want to recursively
+                  list all files under a directory that have a certain name
+                  pattern. Right now my function only lists files in the named
+                  directory (using directory-files).
+       <kasimon> sword: I get one buffer per session and control all of them
+                 individually.
+[23:48]<sword> Oh, same thing then
+       <sword> offbyone: find-name-dired?
+[23:49]<offbyone> I wouldn't expect dired to be the right result
+       <offbyone> I want the absolute paths for them
+       <kodein> ,yow
+       <fsbot`> Of course, you UNDERSTAND about the PLAIDS in the SPIN CYCLE
+                --
+       <offbyone> (directory-files ~/my-dir t PATTERN)
+       <offbyone> but... recursively.
+       <jlf> ,df shell-command-to-string
+       <fsbot`> shell-command-to-string is a compiled Lisp function in
+                `simple.el'.
+       <fsbot`> (shell-command-to-string COMMAND)
+       <fsbot`> Execute shell command COMMAND and return its output as a
+                string.
+[23:50]* jlf is a pragmatist
+       <kasimon> cssh-term-open-remove asks for a hostname. Any Idea how I
+                 could pass it as parameter when running the command in eshell
+                 (maybe even with the completion cssh provides?
+       <ashawley> Elisp is more pragmatic, here.
+[23:51]<jlf> it sounds like he's spent a lot of time on an elisp approach
+             already with little to show for it
+       ERC> /join vim-cn
+[23:52]* offby1 grumbles at offbyone
+       * offby1 sends out a phalanx of attorneys
+       * offby1 launches a stale-bagel salvo
+       <sword> THIS... IS....   LAWYERING
+       <offby1> offbyone: didn't anyone suggest find-name-dired?
+[23:53]<offbyone> offby1: Man, we go over this ground a lot? :)
+[22:49]*** Topic for #emacs: Hokey languages and ancient editors are no match
+           for a good IDE at your side. An IDE like Emacs. | Emacs 23.3 is out
+           | http://emacswiki.org/EmacsChannelFaq | pastebot is
+           http://paste.lisp.org/ | No public logging! What happens in #emacs
+           stays in #emacs
+       *** #emacs: topic set by JordiGH!~jordi@octave/developer/JordiGH,
+           10:51:25 2011/04/17
+       *** Users on #emacs: crazybaby zenwryly jfkw alama ashawley drl
+           Euthydemus dzhus jeansch rlb3 xwl m__h__ jlf rizumu Yvemath
+           banisterfiend spike jory jonkri fsbot xiangfu gko Freakshow
+           sbryant_work JordiGH talau rayners thoolihan MaskRay wbooze homie
+           sm sh10151 gnufied emporas awoodland lois churel_ 18VAAD59V
+           cvandusen fbru02 sellout joegallo mstr xandrews_ alip haesbaer1
+           greaver longfin rbancroft rdd aseem Bodil Sonderblade framling
+           madalu empity carlisia Fuco pdelgallego
+       *** Users on #emacs: pdelgallego_ pgega luneff girzel metaperl
+           thequietcenter ifaria letoh petrux Brainlag saorge gbz e1f``
+           fledermaus akujin mtk melmothX mbohun Odin- jatt sepp2k Yuuhi benny
+           aperturefever schmir davidlee maxJadi mns RaceCondition alephnull
+           `moebius` lanthan AimHere krl rgr rookievoice kensanata isak
+           basho__ moljac024 fcek insomnia1alt chu_ mziulu gnomon Sigma vokoda
+           asarkar aniseed Naresh mishoo__ adben aisbaa fading2 aurelien
+           PeanutHorst plotr dleslie dr_g
+       *** Users on #emacs: dto legumbre_ tuv_ nilg jbalint DrDuck jorgeb
+           Riviera danklizer mfisher thone_ Modius rullie brx Natch| Kiba jlf`
+           yonkeltron theBlackDragon ganbold bur4k1 oknowton borkamaniac
+           yipstar cods sharkbird stisti jaminja Iceland_jack Bzek tromey
+           jlf``` bpalmer Diverdude offbyone ijp dfox erez lukhas vcgomes
+           seangrove mika metasyntax` sentor madsy xinming bla RushPL vds_
+           mishok13 elarson tazle blomqvist jjong setheus Vodouch literal Rapp
+           felipe_ z0d birny Mosu
+       *** Users on #emacs: fschmitt kloeri ve dooglus thgrtuy_ yacoob kodein
+           ivey eN_Joy gabiruh Sketch yibe_ iderrick dxtr bmaland cpt_nemo
+           wolf_ octe nimred speakman ozzloy Schnouki jvogel andres Chalain
+           kmap jjore puff Johannes` zakwilson hohum solarus SaBer Vorpal
+           fahadsadah xale cbmuser tychoish TTilus eZet Tasser s15y esoda
+           mhatta___ thijso justinweiss sunn qDot_ burton Astyan_ Aestas
+           sshirokov chaoflow tlockney AlexanderS fds technomancy beneth`
+           colazero abeaumont hober
+       *** Users on #emacs: renormalist calzifer cmbntr_ hoopy_ sinuc Nafai
+           tvaalen entropie seanw avar devn sebbs nullman jlindsay Kharza b0ef
+           Seb hgb orbitz jaimef d4gg4d dasilvj timchen1` Koshian Viiru
+           Obfuscate grzyda^ jeekl monkeyiq r4v5 marienz birkenfeld galdor
+           callen CrazyEddy Cope Han Zol ft TDT Borbus noptys nyergler
+           bremner`` boyscared mobyu shabble magcius dsr lusory netrom^off
+           DraX chipdude vk0 bigjust kenyon jtg isomer edenc webben sgiessl
+           Nightwolf mwilson rins` raek
+       *** Users on #emacs: rahul c0rn necronian aburgess Hotwired tg torbjorn
+           Julien_T ob jhelwig quotemstr ruediger skangas free rudybot c3l
+           ieure Derander jedediah flatwhatson mqt cenhinen kanru tuvwx mhavas
+           ecraven xxtjaxx drewr khaije|minder hiredman wanders devhost
+           docgnome dueno Dodek antoszka mnemonikk amoe sylar cthuluh
+           justinlilly jayne quicksilver armenb obre tali713 sav danlentz
+           tedroden mahmoudimus renard_ clop2 occamshatchet pingveno jrockway
+           Harski rmrf mtgto McManiaC
+       *** Users on #emacs: monotux paroneayea lvh incandenza pjb tessier_
+           CosmicRay zjason 16SAAAXVM eerie cluck murr4y aindilis aculich
+           raph_ael Boney sheepbat sybariten genehack cataska stepnem offby1
+           mattcen sword fimblo spacebat thursley rubydiamond jtrally
+           dropdrive poindontcare bps Intensity GenKreton thomases corecode
+           rocky levarnu stettberger jabot mjv nunag lut4rp Hun bremner_ jae
+           mcdonc_ Ydaviaorn^ topi` kvsari mathrick wdouglas louiz sigjuice
+           CrrustY_ dezs twem2 ingenious
+       *** Users on #emacs: Laynef wgreenhouse tsbtmn NaCl swors``` mathk
+           yaotti crowbar Dr_Jazz vert2_ xian barika raavan_ bzzbzz_ ivan`
+           johnsu01 ae milkpost Brace bulters pmade texel woozly|job toby1
+           y3llow cuba33ci rts` cyflea rotty prip vpit3833 unknown_lamer
+           quasisane SndAsleep metasyntax tsp lexrex eye-scuzzy fmu bignose
+       *** #emacs URL: http://emacswiki.org/
+       *** #emacs modes: +np
+       *** #emacs was created on Sunday 2006/11/26 14:42:33
+[22:51]<bremner_> isn't that called a fold?
+[22:52]<bremner_> a right fold, iirc
+       <jlf> bremner_: ah, so it is, thanks
+[22:55]<jlf> i guess i'll stick with my own implementation though, as no
+             implementation seems to ship with emacs
+[22:56]<bremner_> not even in CL? surprising.
+[22:58]<jlf> indeed
+       <jlf> xah has an implementation that uses while/setq/pop :)
+[23:00]<bremner_> ergo-fold
+[23:06]<xale> folds are normally called 'reduce' in lisps.
+[23:08]<bremner_> and indeed such a function seems to exist
+[23:12]<jlf> xale: reduce is different than what i described

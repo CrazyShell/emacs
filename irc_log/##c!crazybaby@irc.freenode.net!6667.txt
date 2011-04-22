@@ -1,0 +1,61 @@
+[23:52]*** Topic for ##c: The C Programming Language || PASTE (>3 lines) here:
+           http://ideone.com || HOME page: http://www.iso-9899.info/ (to edit
+           anonymously: username TypeOf'A', and the password is the type of
+           character constants like 'A') || BOOKS here:
+           http://www.iso-9899.info/wiki/Books || Be civil. || Register with
+           nickserv to speak on this channel (/msg nickserv help)
+       *** ##c: topic set by pragma_, 00:32:50 2010/10/07
+       *** Users on ##c: crazybaby pcacjr_ Diverdude alexandernst verywiseman
+           Diod ambro718 gnychis k[l ePirat Godslastering hahuang65 yngress
+           gilaniali Psy anish[1] ayaka muneeb boutcher Havacci king313 homie
+           Yvemath neurodrone bl4ckb1t bearded_oneder Wulf Lectus gener1c
+           wbooze ekneuss xreal Michael_Behman atha Libra102 Burgundy acrocity
+           McMAGIC--Copy ramblex skm codd avinashhm Speeder inad922 Will|
+           beastie guilhermebr Kneta_ danslo Ziarkaen zcram Niamkik pcmattman
+           chrisjw rplnt
+       *** Users on ##c: Icewing gemelen Cthulhu_Dawn dobber gift empity zeld
+           nekschot mnabil Euthydemus iulian buntfalke organdonor Skapare
+           SAHChandler Versuchen Edico kinks phe LiamM _bugz_ synapt ThFabba
+           H2S04 slava_dp mischief WalterM SloMotions Sarajevo duvjones
+           robbyoconnor fisted orafu ouyes Triplefault lolsuper_ BSWolf
+           Gracenotes TheBonsai Andrej11 Tekk` Nisstyre fuzzix preflex safire
+           Kicer86 dkarampin sys timemage haesbaert Agiofws Draconx TEKLore
+           cuba33ci Vijfhoek Phenax
+       *** Users on ##c: Khisanth unreal riotz ikonia kermit kimelto RichardO
+           arun Mogget adayleryan WormDrink djinni` MoALTz Praise alpha^
+           mrmist toothpick sh4rm4 skered iPoLL mikegerwitz else- SiegeX frag4
+           dh speakman patson nimred jvogel pandzilla pfote roto darkrose
+           _habnabit felipe desu pippijn kloeri BombStrike go|dfish dindinx
+           xulfer teratorn emias compengi walmis megaTherion hohum Vorpal
+           Jck_true fahadsadah sepisultrum Damianz Gentle Seta00 Dad` TMM_
+           Xjs|moonshine markatto
+       *** Users on ##c: r0ute SonicvanaJr Deck` davve123 Maxdamantus michaelf
+           suiside angstrom EvilJStoker avar elliottcable int0x27h Dreg Brklyn
+           Cerise betim jerryluc vikasap tharkun orbitz yousef Guest45899
+           SoulSeller lilalinux Teckla jaskorpe heinrich5991 drizztbsd s0und
+           gl einval yahooooo heidar Oort marienz Paradox924X allan8904 wang
+           sn0wflake tomaw prince_jammys hiddenbayes Zhivago slon porten
+           pizza_ Chris mastertheknife Spark CaZe Oddity nejimban t_j iostream
+           cmatei architekt
+       *** Users on ##c: magnus_ bps candide GreYFoXGTi snappy cryptic nag
+           [dmp] nuonguy tty234 ericdc Wiz126 fez tomalak alterecco nogare
+           kuber dimonov Harbinger LeoNerd em Tabmow VaNNi mguy alexgordon maw
+           peper mvooght stitch koollman xuser LoRez callumacrae lestat
+           pseud0cod3r C4741ysT Xgc Natch| gakkun Ttech twkm cinch cthuluh
+           kothog mulvane ksandstr CallToPower erg jayne jfletcher tomiondrums
+           elb0w grosboulet faze` boris`` hfjardim deathmoniac kinesis woggle
+           Dr_v jamesn kurti
+       *** Users on ##c: Polynomial tcunha mafix dv_ dolch mrh twinshadow
+           tzanger JunTao2 ignite ivartj epure_ eerie daghf naquad fflush
+           Nickwiz jfe dbtid jgeboski dxtr oohy9n diogenese TAsn tg codebrainz
+           Amadiro richardwhiuk EoN JNZ mike_f stepnem spal amoe dKingston
+           kszatan micols TheDracle ktch sanjoyd tew88 dropdrive SM0TVI Simath
+           boringwall Vigud threexk lvh llednar martinhex Draconx|Laptop
+           Kismet010 kakazza DarkJuju R0b0t1 jsj0nes nenolod mountaingoat
+           pfloyd abyxcos CESSMASTER
+       *** Users on ##c: xzcvczx chemuduguntar Cobi optraz shachaf ednos
+           araujo serp_ Hun mercury^ kesselhaus sigius diminish alip wdouglas
+           robert_ zachanima Rhamphoryncus fishy1
+       *** ##c URL: http://www.iso-9899.info/
+       *** ##c modes: +Ccnrt
+       *** ##c was created on Sunday 2006/11/26 14:42:39

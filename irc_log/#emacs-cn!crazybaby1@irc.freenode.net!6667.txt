@@ -1,0 +1,6 @@
+[23:28]*** Users on #emacs-cn: crazybaby1 crazybaby
+       *** #emacs-cn modes: +cnt
+       *** #emacs-cn was created on Wednesday 2010/01/27 14:03:59
+       <crazybaby1> #/join vim
+[23:30]<crazybaby1> asd
+       ERC> /join vim

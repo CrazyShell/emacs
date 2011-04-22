@@ -1,0 +1,305 @@
+[23:20]-zelazny.freenode.net- *** Looking up your hostname...
+       -zelazny.freenode.net- *** Checking Ident
+       -zelazny.freenode.net- *** Couldn't look up your hostname
+       -zelazny.freenode.net- *** No Ident response
+       *** Welcome to the freenode Internet Relay Chat Network crazybaby
+       *** Your host is zelazny.freenode.net[140.211.167.99/6667], running
+           version ircd-seven-1.0.3
+       *** This server was created Tue Feb 23 2010 at 23:01:55 UTC
+       *** zelazny.freenode.net ircd-seven-1.0.3 DOQRSZaghilopswz
+           CFILMPQbcefgijklmnopqrstvz
+       *** CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQcgimnprstz
+           CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4
+           NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g are supported by
+           this server
+       *** SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16
+           CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D
+           MONITOR=100 are supported by this server
+       *** FNC
+           TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR:
+           EXTBAN=$,arx WHOX CLIENTVER=3.0 are supported by this server
+       *** There are 361 users and 68601 invisible on 29 servers
+       *** 32 operator(s) online
+       *** 5 unknown connection(s)
+       *** 39411 channels formed
+       *** I have 4324 clients and 1 servers
+       *** Current local users 4324, max 5748
+       *** Current global users 68962, max 72582
+       *** Highest connection count: 5749 (5748 clients) (378968 connections
+           received)
+       *** - zelazny.freenode.net Message of the Day - 
+       *** - Welcome to zelazny.freenode.net in Corvallis, Oregon, US. 
+       *** - Our thanks to Oregon State University for sponsoring this
+       *** - server!
+       *** -  
+       *** - ZELAZNY, ROGER JOSEPH [1937-1995].  Roger Zelazny was a
+       *** - leading light in the New Wave of science fiction.  He began
+       *** - writing in 1962.  Known for such works as This Immortal,
+       *** - Lord of Light, The Dream Master and the Amber books,
+       *** - Zelazny is best known for his idiomatic American
+       *** - protagonists, embodying the mythological figures of the
+       *** - Trickster and the Hero of a Thousand Faces.
+       *** -  
+       *** - You're using freenode, a service of Peer-Directed Projects
+       *** - Center Ltd (http://freenode.net/pdpc.shtml).
+       *** -  
+       *** - PDPC's 2011 fundraiser launched on 14th February 2011. We would 
+       *** - like to invite all users of freenode to get involved in the fun
+       *** - of our Valentine-themed fundraiser launch - see 
+       *** - http://freenode.net/pdpc_valentine.shtml for more!
+       *** -  
+       *** - On the subject of fundraisers, we'd like to thank our donors, 
+       *** - hardware and bandwith sponsors and especially  The Gallery 
+       *** - Project (http://gallery.menalto.com/) and our corporate sponsor 
+       *** - Canonical Ltd (http://www.canonical.com) for the generous 
+       *** - support.
+       *** -  
+       *** - By connecting to freenode you indicate that you have read
+       *** - and agree to adhere to our policies and procedures as per
+       *** - the website (http://freenode.net). We would like to remind
+       *** - you that unauthorized public logging of channels on the
+       *** - network is prohibited. Public channel logging should only
+       *** - take place where the channel owner(s) has requested this
+       *** - and users of the channel are all made aware (if you are
+       *** - publically logging your channel, you may wish to keep a
+       *** - notice in topic and perhaps as a on-join message).
+       *** -  
+       *** - By registering your nickname with Nickserv you agree that you
+       *** - are 13 years of age, or older. For more information about the
+       *** - Children's Online Privacy Protection Act please see their
+       *** - website at (http://www.coppa.org).
+       *** -  
+       *** - freenode runs an open proxy scanner. Your use of the network
+       *** - indicates your acceptance of this policy. For details on
+       *** - freenode network policy, please take a look at our policy
+       *** - page (http://freenode.net/policy.shtml). Thank you for using
+       *** - the network!
+       *** -  
+       *** - Don't forget to check out these other Peer-Directed Projects:
+       *** - FOSSCON [http://www.fosscon.org] and fossevents 
+       *** - [http://www.fossevents.org], and soon we'll repeat last years 
+       *** - success with Picnics for Geeks across the globe, more info at 
+       *** - [http://geeknic.org]
+       *** -  
+       *** - freenode is a service of Peer-Directed Projects Center Ltd,
+       *** - a not for profit organisation registered in England and Wales.
+       *** -  
+       *** - If you support the work we do and wish to donate to the PDPC, 
+       *** - you may do so over at http://freenode.net/pdpc_donations.shtml
+       *** -  
+       *** - Thank you for using freenode!
+       *** -  
+       *** - ***************************************************************
+       *** - Please read http://blog.freenode.net/2010/11/be-safe-out-there/
+       *** - ***************************************************************
+       *** End of /MOTD command.
+       -NickServ- This nickname is registered. Please choose a different
+                  nickname, or identify via /msg NickServ identify <password>.
+       -NickServ- You are now identified for crazybaby.
+[23:21]ERC> /join #emacs
+[23:27]-ChanServ- You are not authorized to perform this operation.
+[23:30]-ChanServ- [#vim] vim discussion .. www.vim.org, vim.sf.net, :help
+[23:45]
+
+Connection failed!  Re-establishing connection...
+[23:45]-wolfe.freenode.net- *** Looking up your hostname...
+       -wolfe.freenode.net- *** Checking Ident
+       -wolfe.freenode.net- *** Couldn't look up your hostname
+       -wolfe.freenode.net- *** No Ident response
+       *** Welcome to the freenode Internet Relay Chat Network crazybaby
+       *** Your host is wolfe.freenode.net[89.16.176.16/6667], running version
+           ircd-seven-1.0.3
+       *** This server was created Tue Apr 5 2011 at 14:24:01 BST
+       *** wolfe.freenode.net ircd-seven-1.0.3 DOQRSZaghilopswz
+           CFILMPQbcefgijklmnopqrstvz
+       *** CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQcgimnprstz
+           CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4
+           NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g are supported by
+           this server
+       *** SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16
+           CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D
+           MONITOR=100 are supported by this server
+       *** FNC
+           TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR:
+           EXTBAN=$,arx WHOX CLIENTVER=3.0 are supported by this server
+       *** There are 357 users and 68603 invisible on 29 servers
+       *** 32 operator(s) online
+       *** 9 unknown connection(s)
+       *** 39388 channels formed
+       *** I have 1703 clients and 1 servers
+       *** Current local users 1703, max 3426
+       *** Current global users 68960, max 71615
+       *** Highest connection count: 3427 (3426 clients) (121240 connections
+           received)
+       *** - wolfe.freenode.net Message of the Day - 
+       *** - Welcome to wolfe.freenode.net in Manchester, England, Uk!  Thanks
+           to
+       *** - Bytemark Computer Consulting Ltd.  (www.bytemark.co.uk) for
+           sponsoring
+       *** - this server!
+       *** -  
+       *** - WOLFE, GENE [1931-].  Prolific writer of short stories and
+       *** - novels. His best-known work is the multi-volume novel The
+       *** - Book of the New Sun. He has won multiple awards including
+       *** - the Nebula Award, the World Fantasy Award, The Campell
+       *** - Memorial Award and the Locus Award. He was awarded the World
+       *** - Fantasy Award for lifetime achievement in 1996.
+       *** -  
+       *** - You're using freenode, a service of Peer-Directed Projects
+       *** - Center Ltd (http://freenode.net/pdpc.shtml).
+       *** -  
+       *** - PDPC's 2011 fundraiser launched on 14th February 2011. We would 
+       *** - like to invite all users of freenode to get involved in the fun
+       *** - of our Valentine-themed fundraiser launch - see 
+       *** - http://freenode.net/pdpc_valentine.shtml for more!
+       *** -  
+       *** - On the subject of fundraisers, we'd like to thank our donors, 
+       *** - hardware and bandwith sponsors and especially  The Gallery 
+       *** - Project (http://gallery.menalto.com/) and our corporate sponsor 
+       *** - Canonical Ltd (http://www.canonical.com) for the generous 
+       *** - support.
+       *** -  
+       *** - By connecting to freenode you indicate that you have read
+       *** - and agree to adhere to our policies and procedures as per
+       *** - the website (http://freenode.net). We would like to remind
+       *** - you that unauthorized public logging of channels on the
+       *** - network is prohibited. Public channel logging should only
+       *** - take place where the channel owner(s) has requested this
+       *** - and users of the channel are all made aware (if you are
+       *** - publically logging your channel, you may wish to keep a
+       *** - notice in topic and perhaps as a on-join message).
+       *** -  
+       *** - By registering your nickname with Nickserv you agree that you
+       *** - are 13 years of age, or older. For more information about the
+       *** - Children's Online Privacy Protection Act please see their
+       *** - website at (http://www.coppa.org).
+       *** -  
+       *** - freenode runs an open proxy scanner. Your use of the network
+       *** - indicates your acceptance of this policy. For details on
+       *** - freenode network policy, please take a look at our policy
+       *** - page (http://freenode.net/policy.shtml). Thank you for using
+       *** - the network!
+       *** -  
+       *** - Don't forget to check out these other Peer-Directed Projects:
+       *** - FOSSCON [http://www.fosscon.org] and fossevents 
+       *** - [http://www.fossevents.org], and soon we'll repeat last years 
+       *** - success with Picnics for Geeks across the globe, more info at 
+       *** - [http://geeknic.org]
+       *** -  
+       *** - freenode is a service of Peer-Directed Projects Center Ltd,
+       *** - a not for profit organisation registered in England and Wales.
+       *** -  
+       *** - If you support the work we do and wish to donate to the PDPC, 
+       *** - you may do so over at http://freenode.net/pdpc_donations.shtml
+       *** -  
+       *** - Thank you for using freenode!
+       *** -  
+       *** - ***************************************************************
+       *** - Please read http://blog.freenode.net/2010/11/be-safe-out-there/
+       *** - ***************************************************************
+       *** End of /MOTD command.
+       -NickServ- This nickname is registered. Please choose a different
+                  nickname, or identify via /msg NickServ identify <password>.
+       -NickServ- You are now identified for crazybaby.
+       -ChanServ- [#vim] vim discussion .. www.vim.org, vim.sf.net, :help
+       -ChanServ- You are not authorized to perform this operation.
+[23:52]*** wolfe.freenode.net 470 crazybaby #c ##c Forwarding to another
+           channel
+[22:49]-sendak.freenode.net- *** Looking up your hostname...
+       -sendak.freenode.net- *** Checking Ident
+       -sendak.freenode.net- *** Couldn't look up your hostname
+       -sendak.freenode.net- *** No Ident response
+       *** Welcome to the freenode Internet Relay Chat Network crazybaby
+       *** Your host is sendak.freenode.net[193.219.128.49/6667], running
+           version ircd-seven-1.0.3
+       *** This server was created Mon Nov 22 2010 at 22:51:51 EET
+       *** sendak.freenode.net ircd-seven-1.0.3 DOQRSZaghilopswz
+           CFILMPQbcefgijklmnopqrstvz
+       *** CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQcgimnprstz
+           CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4
+           NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g are supported by
+           this server
+       *** SAFELIST ELIST=U CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16
+           CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D
+           MONITOR=100 are supported by this server
+       *** FNC
+           TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR:
+           EXTBAN=$,arx WHOX CLIENTVER=3.0 are supported by this server
+       *** There are 353 users and 67108 invisible on 29 servers
+       *** 33 operator(s) online
+       *** 9 unknown connection(s)
+       *** 39293 channels formed
+       *** I have 1789 clients and 1 servers
+       ERC> /join emacs
+       *** Current local users 1789, max 2596
+       *** Current global users 67461, max 71615
+       *** Highest connection count: 2597 (2596 clients) (69285 connections
+           received)
+       *** - sendak.freenode.net Message of the Day - 
+       *** - Welcome to sendak.freenode.net in Vilnius, Lithuania, EU.
+       *** - Thanks to Microlink Lietuva (http://www.microlink.lt) for
+           providing this
+       *** - server!
+       *** -  
+       *** - SENDAK, MAURICE [1928-].  The author of Seven Little
+       *** - Monsters and Where the Wild Things Are, Maurice Sendak was
+       *** - born in Brooklyn, NY, US, to a family of poor Polish
+       *** - immigrants who moved to the US before World War II.  He
+       *** - became an illustrator while in high school.
+       *** -  
+       *** - You're using freenode, a service of Peer-Directed Projects
+       *** - Center Ltd (http://freenode.net/pdpc.shtml).
+       *** -  
+       *** - PDPC's 2011 fundraiser launched on 14th February 2011. We would 
+       *** - like to invite all users of freenode to get involved in the fun
+       *** - of our Valentine-themed fundraiser launch - see 
+       *** - http://freenode.net/pdpc_valentine.shtml for more!
+       *** -  
+       *** - On the subject of fundraisers, we'd like to thank our donors, 
+       *** - hardware and bandwith sponsors and especially  The Gallery 
+       *** - Project (http://gallery.menalto.com/) and our corporate sponsor 
+       *** - Canonical Ltd (http://www.canonical.com) for the generous 
+       *** - support.
+       *** -  
+       *** - By connecting to freenode you indicate that you have read
+       *** - and agree to adhere to our policies and procedures as per
+       *** - the website (http://freenode.net). We would like to remind
+       *** - you that unauthorized public logging of channels on the
+       *** - network is prohibited. Public channel logging should only
+       *** - take place where the channel owner(s) has requested this
+       *** - and users of the channel are all made aware (if you are
+       *** - publically logging your channel, you may wish to keep a
+       *** - notice in topic and perhaps as a on-join message).
+       *** -  
+       *** - By registering your nickname with Nickserv you agree that you
+       *** - are 13 years of age, or older. For more information about the
+       *** - Children's Online Privacy Protection Act please see their
+       *** - website at (http://www.coppa.org).
+       *** -  
+       *** - freenode runs an open proxy scanner. Your use of the network
+       *** - indicates your acceptance of this policy. For details on
+       *** - freenode network policy, please take a look at our policy
+       *** - page (http://freenode.net/policy.shtml). Thank you for using
+       *** - the network!
+       *** -  
+       *** - Don't forget to check out these other Peer-Directed Projects:
+       *** - FOSSCON [http://www.fosscon.org] and fossevents 
+       *** - [http://www.fossevents.org], and soon we'll repeat last years 
+       *** - success with Picnics for Geeks across the globe, more info at 
+       *** - [http://geeknic.org]
+       *** -  
+       *** - freenode is a service of Peer-Directed Projects Center Ltd,
+       *** - a not for profit organisation registered in England and Wales.
+       *** -  
+       *** - If you support the work we do and wish to donate to the PDPC, 
+       *** - you may do so over at http://freenode.net/pdpc_donations.shtml
+       *** -  
+       *** - Thank you for using freenode!
+       *** -  
+       *** - ***************************************************************
+       *** - Please read http://blog.freenode.net/2010/11/be-safe-out-there/
+       *** - ***************************************************************
+       *** End of /MOTD command.
+       -NickServ- This nickname is registered. Please choose a different
+                  nickname, or identify via /msg NickServ identify <password>.
+       -NickServ- You are now identified for crazybaby.

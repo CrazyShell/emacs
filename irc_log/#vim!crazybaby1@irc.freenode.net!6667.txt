@@ -1,0 +1,108 @@
+[23:30]*** Topic for #vim: Can't Talk? Get Registered on FreeNode (HOWTO:
+           http://tinyurl.com/27a4cnw) | Vim 7.3.145 http://vim.sf.net | Don't
+           ask to ask! | Before you ask :help, and :helpgrep, and google |
+           WIKI: http://vim.wikia.com | FACEBOOK:
+           http://tinyurl.com/vim-facebook | PASTE: http://vim.pastey.net |
+           DONATE: http://www.vim.org/sponsor
+       *** #vim: topic set by Zathrus!~tom@unaffiliated/zathrus, 01:50:12
+           2011/03/30
+       *** Users on #vim: crazybaby1 jbw karlh626 cschneid chrischambers
+           kenichi axolx SolarisBoy lucasoman kristianpaul Starfire Cromulent
+           fadein bak1an pattern zmbmartin jlebar ceej _sc_ bitslip mdel
+           muneeb Havacci variable babilen brettgoulder JetBoy tavist0 jpease
+           comand plwert kenguest quake_guy jemadux mia158 iain2k sec^nd
+           vincent_wang bartek v0n matth25 pen jeffreyt bairui ConstantineXVI
+           owain zematynnad nixness jos3ph iamjarvo nicksergeant ekneuss
+           alderz ningia kronn
+       *** Users on #vim: davertron pna_ SSgtSpoon|work dharrigan jtmusky
+           diamonds Tramjoe Dice-Man adamnbowen rejb GrowLinux drubies
+           dv310p3r jamur2 MetaCosm hampusw guardian kalopsian lugkhast
+           malkomalko ignarps davro kenda sattvik avinashhm bryanl Ionic
+           inad922 mikl Will| lbc_ CiRlE Katana arturas paissad avdg jstemmer
+           dalybr nimrod10` peth zcram jem777 danohuiginn ironhead dimebar
+           Electric_Brain BlankVerse noonoooo NiTr0 gdott9 gronlund sipior
+           DainHome Kick__ pigdude Proshot
+       *** Users on #vim: nabax Mo ludan kurkale6ka MartIrcTest zloy zl0y
+           hylix troessner vimJoseki pepiino bentob0x Bj_o_rn punknroll dpino_
+           RusAlex mortice thrope CarlFK xing andy753421 dharmatech vanmik
+           djcoin npitvcsm f00li5h bsod1 `moebius` slackstation slava_dp
+           BigBlackDog s4msung xuser blomqvist rindolf saikobee setheus
+           efaistos Shapeshifter ExtraSpice HT fisted orafu ryz Xilent
+           MetaCosm_ aka gnusosa iAmerikan drbean ecmuller peter_w cho_co dive
+           catsup charleyb Reviou
+       *** Users on #vim: master_of_master Chibby_ jga023 preflex hjb_ yofel
+           alessio_alexAFK galaxywatcher csgeek kpal Buglouse qz cuba33ci
+           y3llow jdhore woozly|job S_Arms Travis-42 Miesco mattly dpyro
+           BBonifield jshell ikonia kermit kongo indicator Irish flowbee ml|
+           ricorx7 nd_ tris ia ormaaj_ annttu KKA RichardO sontek bgy mattp_
+           milkpost zeltak1 mason-l DE1 jrdavid shame gregorg wooden htaccess
+           Typh thumbs zomg yroeht_ Zharf silky _co_ jtrucks denysonique bob_f
+           andyl skered
+       *** Users on #vim: bmalee Derex numbah Kuukunen Chibby giany riot_dd_
+           Modius alip Evanlec iPoLL zu_ sven^_ ferret_ Carneus iksik sivoais
+           guyzmo nopf asuka_ \DSAFEW\ shachaf AkiraYB erk abyxcos rson Leemp2
+           miffe RichiH jsj0nes Raimondi elasticdog that_nima Kismet010 j0su3
+           toothpick guitarman ReinH esc vibowit shpaq dKingston `Leonard
+           majutsushi_ dajune amiri falconindy heckacopter guide indentity_nl
+           nuba topheil WebDragon alpha_ micols kszatan dhruvasagar Minos
+           azzid niko
+       *** Users on #vim: fr0gprince_ blueyed stepnem vstemen kfo_ madmax
+           nkvorn Chelsea jham chalcedony muteki rl murr4y gerard0 floppyears
+           jvalroff mius brandonw Fishy twiggy naquad tdn eerie ipkiss
+           bartman` KeeperOfTheSoul Caelum tessier_ deryni baklava dcraven
+           mail injekt tek0 duckshaft Guest47557 KitB skizzhg tcunha
+           logankoester torio frogonwheels scardinal somian[0] occamshatchet
+           cpina__ musl faze` diz_ jmcantrell jayne accipter funfun d1b graywh
+           thraen ptr_uzl ksandstr
+       *** Users on #vim: renihs yogan elenril ciaranm toe trustedsage kassien
+           tpope JarJarBinks ejls Natch| jink twofish xelados PhilB unop
+           pielgrzym tmz JamesOff Dabuti bball- EspadaV8_away levifig larsen
+           elb0w NeonLicht Drakevr peper picasso somian[2] Reisen tote LeoNerd
+           starcoder2 CaBa gregf1 sernin oogaw meder parus rphillips hq1
+           heathkit btipling mebus Derander MarcWeber joc Xeross wahooooo
+           ScottG trodrigues rtward zorzar joeytwiddle rane_ Kulrak agi
+           jabirali vesan thkoehler
+       *** Users on #vim: stuffcorpse iaj py1hon sitaktif Araxia raccoon_
+           daethorian mindbeat Epeli bnovc ohcibi architekt felher batrick
+           roger_raymond bburhans noj porter TheBrayn fr Nyoxi xchg stamina
+           scrooloose mwilson dalurka okayzed josswr Nightwolf ruskie webben
+           hjertnes koki tomaw alip-- Atlas Zed` anekos futilius kennyp
+           Utkarsh minerale heidar ajpiano Nebbie marowit_ enterhaken sir_lewk
+           lusory roppert mavvert havocologe mitsuhiko Zathrus ddollar jlewis
+           snorble widox mgedmin
+       *** Users on #vim: brotig erm ska-fan rblackwe spb wayneeseguin
+           preaction heinrich5991 fafanet rudi_s Smark inr manu_hack grzyda^
+           Ori_B makinen tmr BigEndian CHC deputydink mephux__ garrik
+           Obfuscate tnelson_ quuxman mmackus_ EvanDotPro jacobat
+           flamingspinach RecQuery marlun el_seano drio sejo hiffy harleypig
+           j6dyck stick gpd H2S04 Cerise johnhill NickASloan fs111 tobyS aesy
+           ahf Kick_ elliottcable hide rjbs [dmp] jhujhiti mephistophocles
+           deever LoRe vimgor tenthirteen
+       *** Users on #vim: EvanCarroll cjns3274 rtl markatto dgfitch woldrich
+           Belgarion_ daithif zdravi Kottizen_ at5l imajes frodwith Shuba maio
+           chewbran1a jaskal_ og01 et sjl_ Garoth dwierenga industrial cupsh
+           Cy-4 zied sqz Dad` pov malesca ashleydev shikamaru [Arfrever]
+           jerojasro JonasF aep beppu eZet GGLucas edwinkcw dbatbold dev-zero
+           henroc jamessan fahadsadah SuperTux88 madduck dflurker
+           phillipadsmith asidjazz paradigm hegge mmso sluggr jjcm limon
+           verma_ consumerism majoh
+       *** Users on #vim: derchill1r Smirnov_ spiiph psycojoker mahlon literal
+           Touns dok felipe_ srnb tappi defragger Kiruwa kloeri Juri_Agarin
+           gkatsev drry przemoc dindinx go|dfish piti mrshoe indigo_ aimka rhc
+           lanker michaelj1n seku tfc sw4 w0m dancek radhermit ed1703 doki_pen
+           tolecnal remi eN_Joy Silex sgronblo Josay_ norge_ e36freak segy_
+           ironcamel frak cYmen sente anonymouse89 compnerd- crater2150 wolf_
+           zamolxes nimred CrazyGir jadahl idoru dwarder dunz0r cafaro frag4
+       *** Users on #vim: appamatto CIA-45 grncdr _Araxia ed_
+       *** #vim URL: http://vi-improved.org
+       *** #vim modes: +Ccnt
+       *** #vim was created on Sunday 2006/11/26 14:42:44
+       <bmalee> col -bp, I think.
+       <mgedmin> shell commands that print ANSI color codes when $TERM ==
+                 "dumb", are dumb
+       <crazybaby1> asd
+       *** #vim: Cannot send to channel
+       <LeoNerd> Or when stdout is not a tty
+[23:32]<mgedmin> (gvim uses a tty for shell commmands)
+       <LeoNerd> Oh... really? Heh... it oughtn't, really.
+       <LeoNerd> Or exactly this kind of thing will occur

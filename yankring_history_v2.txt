@@ -1,0 +1,100 @@
+ad,v
+-14-i686-Live-Desktop,v
+D,v
+C,v
+root=live:LABEL=FEDORA,v
+title Fedora Live CD kernel (hd0,6)/isolinux/vmlinuz0 root=live:LABEL=FEDORA liveimg quiet rhgb rootfstype=auto vga=791initrd (hd0,6)/isolinux/initrd0.img,V
+c:\grldr="GRUB",v
+http://www.94qing.com/callback.php,v
+540644769,v
+searchFileFolder,v
+		e,V
+fileName,v
+		if (fileName<>"" and InStr(replace(thing,BasePath&"\",""),fileName)>0) or fileName="" then,V
+folder,v
+folder=request("folder"),V
+Venus,v
+search,v
+		var fileName=$("search").value;,V
+	<input type='button' onclick='Search()' value='搜索' style='cursor:pointer'>,V
+	书名搜索:<input type="text" id="search" name="search" style='width:80px;'>,V
+<body ><!-- onLoad="ini()" -->,V
+response.write fileName,V
+,,v
+replace(thing,BasePath&"\",""),v
+thing,v
+		response.write replace(thing,BasePath&"\",""),V
+fileName<>"" and,v
+"||"&getType(thing)&"||",v
+listType,v
+InStr(listType,"||"&getType(thing)&"||")>0,v
+Initial,v
+this.innerHTML,v
+SearchValue,v
+/,v
+	a,V
+//				parent.mainFrame.location.href="browse_list.asp?fileName="+this.innerHTML+"&folder="+'<%=folder%>'+"";,V
+style='height:550px;margin-left:30px;',v
+overflow:hidden;overflow-y:scroll;,v
+',v
+2,v
+1,v
+	margin-left:10px;,V
+response.write fileNameInitial,V
+		if ,V
+response.write folder,V
+folder=replace(folder,",","\") ,V
+\,v
+path%,v
+response.write folderresponse.end,V
+folder=replace(""),V
+folder=replace(folder,"\","") ,V
+up_file=folder,V
+BasePath=request("APPL_PHYSICAL_PATH") BasePath=BasePath&PathUrl,V
+//////////////////////////////////,1
+<%,V
+i,V
+f folder<>"" then	folder=replace(folder,",","\")	BasePath=BasePath&folderresponse.Write("<ul class='tree'><li><a onFocus='this.blur();' href='#' onclick="&chr(34)&"up_file('"&up_file&"')"&chr(34)&" ><img border='0' src='../images/zongwenjianjia.gif'> ..</a></li><li><ul class='tree'>")set fso = createobject("scripting.filesystemobject")set MyFolder=fso.GetFolder(BasePath)for each thing in MyFolder.SubFolders	response.Write("<li><a onFocus='this.blur();' class='tree' target='mainFrame' href='browse_list.asp?folder="&folder&"\"&replace(thing,BasePath&"\","")&"'><img border='0' src='../images/folder1.gif'>"&replace(thing,BasePath&"\","")&"</a></li>")nextresponse.Write("</li></ul></ul>")end if%><%if session("fileType")="img" then%><div id="Layer1"><img id="showImg" width="100%" height="100%" src="" onerror="this.src='../images/nopic.gif'"></div><%end if%>,v
+name,v
+</body>,V
+,V
+<div id="filter" style='margin-left:30px;height:550px;overflow:hidden;overflow-y:scroll;'></div>,v
+mmm\mm_project2,v
+<%PathUrl="mmm\mm_project2"folder=request("folder")up_file=folderBasePath=request("APPL_PHYSICAL_PATH") BasePath=BasePath&PathUrlif folder<>"" then	folder=replace(folder,",","\")	BasePath=BasePath&folderresponse.Write("<ul class='tree'><li><a onFocus='this.blur();' href='#' onclick="&chr(34)&"up_file('"&up_file&"')"&chr(34)&" ><img border='0' src='../images/zongwenjianjia.gif'> ..</a></li><li><ul class='tree'>")set fso = createobject("scripting.filesystemobject")set MyFolder=fso.GetFolder(BasePath)for each thing in MyFolder.SubFolders	response.Write("<li><a onFocus='this.blur();' class='tree' target='mainFrame' href='browse_list.asp?folder="&folder&"\"&replace(thing,BasePath&"\","")&"'><img border='0' src='../images/folder1.gif'>"&replace(thing,BasePath&"\","")&"</a></li>")nextresponse.Write("</li></ul></ul>")end if%><%if session("fileType")="img" then%><div id="Layer1"><img id="showImg" width="100%" height="100%" src="" onerror="this.src='../images/nopic.gif'"></div><%end if%>,v
+<%if session("fileType")="img" then%><div id="Layer1"><img id="showImg" width="100%" height="100%" src="" onerror="this.src='../images/nopic.gif'"></div><%end if%>,v
+if folder<>"" then	folder=replace(folder,",","\")	BasePath=BasePath&folderresponse.Write("<ul class='tree'><li><a onFocus='this.blur();' href='#' onclick="&chr(34)&"up_file('"&up_file&"')"&chr(34)&" ><img border='0' src='../images/zongwenjianjia.gif'> ..</a></li><li><ul class='tree'>")set fso = createobject("scripting.filesystemobject")set MyFolder=fso.GetFolder(BasePath)for each thing in MyFolder.SubFolders	response.Write("<li><a onFocus='this.blur();' class='tree' target='mainFrame' href='browse_list.asp?folder="&folder&"\"&replace(thing,BasePath&"\","")&"'><img border='0' src='../images/folder1.gif'>"&replace(thing,BasePath&"\","")&"</a></li>")nextresponse.Write("</li></ul></ul>")end if,v
+folder=request("folder")up_file=folder,V
+folder="+path+",v
+				alert(this.innerHTML),V
+path,v
+	parent.mainFrame.location.href="browse_list.asp?folder="+path+"";,V
+L,v
+overflow-x:hidden;overflow-y:scroll,v
+;,v
+overflow-y:scroll,v
+3,v
+left,v
+margin-left,v
+0,v
+				zimuClick(this.innerHTML);,V
+function zimuClick(a){	var ary=data_ary.filter(function(s){		return (s.zimu==a);	});	$("datagrid").innerHTML="";	var node=trans(ary);		grid1=drawGrid("datagrid",node);},v
+		eval("data_ary=<%=str%>");,V
+var data_ary=[];,V
+.css1{/*	cursor:pointer;*/	font-size:16px;	font-weight:bold;},v
+.css2{	padding-left:10px;	margin-left:10px;},v
+<%>,v
+PathUrl="libraryFiles"folder=request("folder")up_file=folderBasePath=request("APPL_PHYSICAL_PATH") BasePath=BasePath&PathUrlif folder<>"" then	folder=replace(folder,",","\")	BasePath=BasePath&folderresponse.Write("<ul class='tree'><li><a onFocus='this.blur();' href='#' onclick="&chr(34)&"up_file('"&up_file&"')"&chr(34)&" ><img border='0' src='../images/zongwenjianjia.gif'> ..</a></li><li><ul class='tree'>")set fso = createobject("scripting.filesystemobject")set MyFolder=fso.GetFolder(BasePath)for each thing in MyFolder.SubFolders	response.Write("<li><a onFocus='this.blur();' class='tree' target='mainFrame' href='browse_list.asp?folder="&folder&"\"&replace(thing,BasePath&"\","")&"'><img border='0' src='../images/folder1.gif'>"&replace(thing,BasePath&"\","")&"</a></li>")nextresponse.Write("</li></ul></ul>")end if%><%if session("fileType")="img" then%><div id="Layer1"><img id="showImg" width="100%" height="100%" src="" onerror="this.src='../images/nopic.gif'"></div><%end if%,v
+span,v
+meeko,v
+<script src="../scripts/meeko.js" type="text/javascript" charset="gb2312"></script>,V
+utf-8,v
+	11,V
+words,v
+	var ary=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];//	alert(ary.length)	var obj=$("words");	ary.each(function(i){		var span=obj.addElm("","span");		span.className="css2";		var a=obj.addElm("","a");		a.innerHTML=this[i];		a.href="#";		a.className="css1";		a.onclick=function(){			zimuClick(this.innerHTML);		}	});	eval("data_ary=<%=str%>");,v
+	var ary=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];,V
+  	121,V
+<div>12121</div>,V
+刘爽兄 再次求一知乎邀请,上次你答应给我的 可能忘记给我了 我的邮箱是crazybaby#yeah.net,v
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">,V
+class='oh',v
+gym ,v

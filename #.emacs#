@@ -1,0 +1,925 @@
+;;####################Crazybaby's Emacs config comments#############;;{{{
+;; 	复制M-w  粘贴 C-y 删除全部 C-x h M-K   ,C-w删除局部和一行可当剪切
+
+;; ;########F功能键操作#####
+;;    F2 书签 C-F2 查找下一个书签 S-F2查找上一个书签 C-S-F2清空当前文件的所有书签
+;; 	  F5 complie
+;; 	  F6 debug
+;; 	  F7 eshell
+;;    F8 speedbar
+;;
+;; ;#########代码折叠######
+;;     ;C-c -  单个折叠
+;;     ;C-C =  单个unfold
+;;     ;C-_  全部fold
+;;     ;C-+   全部unfold
+;;     ;iemacs下 s为折叠aa
+;;
+;; ########文件操作#####
+;; 	打开缓冲区 C-x b 
+;;  打开当前目录 C-x d
+;;
+;; ########emacsi操作#####
+;; 	和vim的操作相似 用来读代码不错
+;; 	M-S 编辑 M-s浏览
+;;
+;; ;########高亮操作#####
+;; 	;C-c M-H高亮当前光标下的单词
+;; 	;C-c M-R取消所有单词的高亮
+;; 	;C-c M-N移到下一个高亮
+;; 	;C-c M-P则移到上一个高亮
+;; 	;;;;;上面在进入emacsi模式时n和p即可操作
+
+;; ;########M-数字键操作操作#####
+;; 	M-4高亮要修改的文字
+;; 	M-5格式化代码
+
+;; ;########注释操作####
+;;   	;C-c C-c 整行注释和反注释
+;;  	;M-;末尾注释
+;;      ;C-c c i doxemacs注释
+;;      ;任何注释都可以使用C-u C-c C-c取消
+;;      C-c d f 函数注释
+;;      C-cd;  末尾注释
+
+;; ;##########Mark操作########
+;;     ;C-x C-n向下选择块
+;;     ;C-x C-p向上选择块
+
+;; ;########Shell 操作######
+
+;; ;#######Buffer 操作######
+;;    ;(define-key global-map (kbd "C-x M-n") 'next-buffer)
+;;    ;(define-key global-map (kbd "C-x M-p") 'previous-buffer)
+;;    ;(global-set-key (kbd "C-x k") 'kill-this-buffer) 关闭当前buffer
+
+;; ;########grep操作####
+;;      ;(("C-x F"   find-grep-in-current-dir)
+;;      ;("C-x f"   find-grep-in-dir)
+;;      ;("C-x M-f" find-grep-current-word-in-current-dir)
+;;      ;("C-x M-F" find-grep-current-word)))
+
+;; ;#####窗口操作#########
+;;     ;C-M-v用来滚动下一个窗口
+;;     ;C-x 4 b 在另一个窗口打开缓冲
+;;     ;C-x { 将当前窗口变窄
+;;     ;C-x } 将当前窗口变宽
+
+;      #########大小写切换####
+;;     C-6大小写切换
+;;     M-c首字母转换为大写
+;;     M-u后面全部转换为大写
+;;     M-M-u 前面全部转换为大写
+;;     M-l全部转换为小写
+;; ;########Other操作#####
+;; 	;M-X list-processes+-settings 显示进程
+;;     ;C-x l 显示当前文件的行数和字数
+;;     ;C-x L 显示当前函数的函数和字数
+;;     ;C-x E 打开.emacs
+;;     ;C-j go to line
+;;     ;M-r 替换 first input replaced word, second inut replace word ,then input y o confirm
+;;     ;M-, M-. 跳跃到去过的地方
+;;     ;C-s C-w把当前光标的后的内容放入搜索栏
+;;     ;C-c ( 记录一个宏
+;;     ;C-c ) 结束一个宏
+;;     ;C-c e 执行上一个键盘宏
+;;     ;C-u 20 C-x e 执行宏
+;;     ;C-u C-x ( 追加到上一个键盘宏
+;;     ;C-M-p 括号向后跳转
+;;     ;C-M-n 括号向前跳转
+;;     ;C-<backspace> 向后删除一个word M-d 向前删除一个wordq
+;;     ;C-x C-t交换这行和上一行的位置
+;;     ;C-x C-v打开vip-mode
+;;     ;C-x 1关闭其它窗口
+;;     ;C-0 search a char
+;;     ;C-x \ 标记
+;;     ;M-k 删除整个段落
+;;     ;C-x M-w 复制并粘贴当前行
+;;     ;C-\ 多行合并一行
+;;     ;M-U 删除从光标到开头
+;;     ;C-x C-X互换可插入点和交叉点的位置 
+;;     ;C-z redo, C-z /
+
+;;##########C语言操作########### 
+;;     inc,  自动完成include文件的输入
+
+;;####################
+        ;M-U del-to-begin
+		;
+;;##########鼠标操作############
+;       ;Ctrl+左键 可以调出一个menu
+;       ;左键选择可以复制选择的区域
+;       ;Shift+左键可以选择字体
+;       ;alt+左键 直接复制到光标所在处 shift+alt+左键剪贴
+;
+;##########计算器###############
+;       d2 d8 d0 d6 进制操作 
+;       M-X calc
+;;}}}
+;;alt+1 2 3 切换窗口
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;Crazybaby's Emacs config comment end;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;   
+(setenv "HOME" "E:/emacs/")
+(defconst my-emacs-path "E:/emacs/.emacs.d/" "我的emacs相关配置文件的路径")
+(defconst my-emacs-my-lisps-path  (concat my-emacs-path "my-lisps/") "我自己写的emacs lisp包的路径")
+(defconst my-emacs-lisps-path     (concat my-emacs-path "lisps/") "我下载的emacs lisp包的路径")
+(defconst my-emacs-templates-path (concat my-emacs-path "templates/") "Path for templates")
+(defconst my-emacs-default-path "E:/My-Projects/C++_Codes") ;@@需要随电脑变动而更改的
+
+;; 把`my-emacs-lisps-path'的所有子目录都加到`load-path'里面
+(load (concat my-emacs-my-lisps-path "my-subdirs"))
+(my-add-subdirs-to-load-path my-emacs-lisps-path)
+(my-add-subdirs-to-load-path my-emacs-my-lisps-path)
+
+(require 'ahei-misc) ;; 一些基本的小函数
+(require 'eval-after-load) ;; 利用`eval-after-load'加快启动速度的库
+(require 'util)
+(require 'misc-settings) ;; 一些Emacs的小设置
+(require 'coding-settings) ;; 编码设置
+(require 'cua-settings) ;; CUA的矩阵区域操作特别方便
+(require 'ffap-settings) ;; ffap,打开当前point的文件
+(global-font-lock-mode t) ;; 语法高亮
+
+;; 增加自定义关键字{{{
+(dolist (mode '(c-mode c++-mode java-mode lisp-mode emacs-lisp-mode
+
+                       lisp-interaction-mode sh-mode sgml-mode))
+
+  (font-lock-add-keywords
+   mode
+   '(("\\<\\(FIXME\\|TODO\\|Todo\\|HACK\\):" 1 font-lock-warning-face prepend)
+     ("\\<\\(and\\|or\\|not\\)\\>" . font-lock-keyword-face)
+     ("(\\|)" . beautiful-blue-face)
+     ("\\[\\|]" . yellow-face)
+     ("<\\|>" . cyan-face)
+     ("{\\|}" . green-face))))
+
+(defun generate-tag-table ()
+  "Generate tag tables under current directory(Linux)."
+  (interactive)
+  (let ((exp "") (dir ""))
+    (setq dir (read-from-minibuffer "generate tags in: " default-directory)
+          exp (read-from-minibuffer "suffix: "))
+    (with-temp-buffer
+      (shell-command
+       (concat "find " dir " -name \"" exp "\" | xargs etags ")
+       (buffer-name)))))
+;;}}}
+(require 'hs-minor-mode-settings) ;; hs-minor-mode,折叠代码
+
+;;对括号在函数最右边设置{{{
+(defun skeleton-c-mode-left-brace (arg)
+  (interactive "P")
+  (if  (c-in-literal (c-most-enclosing-brace (c-parse-state)))
+      (self-insert-command 1)
+    ;; auto insert complex things.
+    (let* ((current-line (delete-and-extract-region (line-beginning-position) (line-end-position)))
+           (lines (and arg (mark t) (delete-and-extract-region (mark t) (point))))
+           (after-point (make-marker)))
+       ;;; delete extra blank begin and after the LINES
+      (setq lines (and lines
+                       (with-temp-buffer
+                         (insert lines)
+                         (beginning-of-buffer)
+                         (delete-blank-lines)
+                         (delete-blank-lines)
+                         (end-of-buffer)
+                         (delete-blank-lines)
+                         (delete-blank-lines)
+                         (buffer-string))))
+      (save-excursion
+        (let* ((old-point (point)))
+          (insert (if current-line current-line "")  "{\n")
+          (and lines (insert lines))
+          (move-marker after-point (point))
+          (insert "\n}")
+          (indent-region old-point (point) nil)))
+      (goto-char after-point)
+      (c-indent-line))))
+;;}}}
+
+(require 'all-paren-settings) ;; 所有关于括号的配置
+(require 'which-func-settings) ;; 用来显示当前光标在哪个函数
+(require 'autoconf-mode-settings)
+(require 'highlight-symbol-settings) ;; 像Eclipse那样高亮光标处单词
+(require 'all-auto-complete-settings) ;; 所有的自动补全的配置
+(require 'all-lisp-settings) ;; 所有关于lisp方面的配置
+(require 'sh-mode-settings) ;; 开发shell程序的mode配置
+(require 'eldoc-settings) ;; 显示变量, 函数的声明
+(require 'autopair-settings) ;; 自动给你加上括号
+(require 'eclim-settings) ;; 把Eclipse的功能带给Emacs
+
+;; 回车后indent{{{
+(eal-define-keys
+ `(lisp-mode-map emacs-lisp-mode-map lisp-interaction-mode-map sh-mode-map
+                 ,(if (not is-before-emacs-21) 'awk-mode-map) java-mode-map
+                 ruby-mode-map c-mode-base-map tcl-mode-map org-mode-map
+                 python-mode-map perl-mode-map)
+ `(("RET" newline-and-indent)))
+
+(defun copy-current-fun-name ()
+  "Copy current function name."
+  (interactive)
+  (kill-new (which-function)))
+
+(mapc 'require '(;; hide region
+                 hide-region-settings
+                 ;; hide lines
+                 hide-lines
+                 ;; 把imenu以tree的形式显示出来
+                 imenu-tree-settings
+                 ;; 高亮引用的函数和变量
+                 zjl-hl-settings
+                 ;; 把speedbar放到当前frame里面
+                 sr-speedbar-settings
+                 codepilot-settings
+                 perl-settings
+                 ;; 实现程序变量的自动对齐
+                 align-settings
+                 ;; 生成c程序调用图
+                 ;; http://emacser.com/emacs-cflow.htm
+                 ;;cflow-mode-settings
+				 ))
+;}}}
+
+(require 'rect-mark-settings) ;; 矩形区域操作
+(require 'mark-settings) ;; 关于mark的一些设置，使你非常方便的选择region
+(require 'mode-line-settings) ;; `mode-line'显示格式
+(menu-bar-mode -1)  ;;不要menu_bar
+;; GUI下显示toolbar的话select-buffer会出问题
+(if (fboundp 'tool-bar-mode)
+    (tool-bar-mode -1))
+
+;; edit-settings中对M-w重新定义,但是kde-emacs中也对其定义了
+
+;; 所以必须要放在kde-emacs后面
+(require 'edit-settings)
+(require 'icomplete-settings) ;; 用M-x执行某个命令的时候，在输入的同时给出可选的命令名提示
+
+;; minibuffer中输入部分命令就可以使用补全
+(unless is-after-emacs-23
+  (partial-completion-mode 1))
+
+(setq kill-ring-max 200) ;; 用一个很大的kill ring. 这样防止我不小心删掉重要的东西
+(require 'browse-kill-ring-settings) ;; 方便的在kill-ring里寻找需要的东西
+(require 'linum-settings) ;; 显示行号
+
+;; color theme Emacs主题
+;;(require 'color-theme-settings)
+;;(require 'ahei-face)
+;;(require 'color-theme-ahei)
+;;(require 'face-settings)
+
+
+(load-file "~/.emacs.d/my-lisps/themes/color-theme-luolE-darknight.el")
+(require 'color-theme) ;淡灰色
+(color-theme-luolE-darknight)
+(require 'ahei-face) ;;高亮关键字时加上
+(require 'face-settings)
+
+(require 'hl-line-settings) ;; 高亮当前行
+(require 'font-settings) ;; 字体配置
+(require 'diff-settings) ;; diff
+(require 'ediff-settings) ;; Emacs的diff: ediff
+;;(require 'recentf-settings) ;; 最近打开的文件
+(require 'moccur-settings) ;; 在buffer中方便的查找字符串: color-moccur
+(require 'isearch-settings) ;; Emacs超强的增量搜索Isearch配置
+(require 'time-stamp-settings) ;; time-stamp, 在文件头记录修改时间, 并动态更新
+
+;; 显示ascii表
+(require 'ascii)
+
+;; 所有关于查看帮助方面的配置
+(require 'all-help-settings)
+
+;; 定义一些emacs 21没有的函数
+(if is-before-emacs-21 (require 'for-emacs-21))
+
+(require 'yasnippet-bundle)
+(setq yas/root-directory "~/.emacs.d/snippets") 
+(yas/initialize)
+(yas/load-directory yas/root-directory)
+(global-set-key (kbd "<tab>") 'yas/expand)
+
+;;yas end
+
+
+;; 简写模式
+(setq-default abbrev-mode t)
+(setq save-abbrevs nil)
+
+;; 可以为重名的buffer在前面加上其父目录的名字来让buffer的名字区分开来，而不是单纯的加一个没有太多意义的序号
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'forward)
+
+;; 以目录形式显示linkd文档
+;;(require 'linkd-settings)
+
+;; Emacs的超强文件管理器
+(require 'dired-settings)
+
+;; 方便的切换major mode{{{
+(defvar switch-major-mode-last-mode nil)
+
+(defun major-mode-heuristic (symbol)
+  (and (fboundp symbol)
+       (string-match ".*-mode$" (symbol-name symbol))))
+(defun switch-major-mode (mode)
+  "切换major mode"
+  (interactive
+   (let ((fn switch-major-mode-last-mode) val)
+     (setq val
+           (completing-read
+            (if fn (format "切换major-mode为(缺省为%s): " fn) "切换major mode为: ")
+            obarray 'major-mode-heuristic t nil nil (symbol-name fn)))
+     (list (intern val))))
+  (let ((last-mode major-mode))
+    (funcall mode)
+    (setq switch-major-mode-last-mode last-mode)))
+(global-set-key (kbd "C-x q") 'switch-major-mode)
+
+(defun get-mode-name ()
+  "显示`major-mode'及`mode-name'"
+  (interactive)
+  (message "major-mode为%s, mode-name为%s" major-mode mode-name))
+(global-set-key (kbd "C-x m") 'get-mode-name)
+;;}}}
+
+;; 查看Emacs内进程
+;;(require 'list-processes+-settings)
+;;(require 'view-mode-settings)
+
+(defun revert-buffer-no-confirm ()
+  "执行`revert-buffer'时不需要确认"
+  (interactive)
+  (when (buffer-file-name)
+    (let ((emaci emaci-mode))
+      (revert-buffer buffer-file-name t)
+      (emaci-mode (if emaci 1 -1)))))
+(eal-define-keys-commonly
+ global-map
+ `(("C-x u"   revert-buffer-no-confirm)
+   ("C-x M-K" revert-buffer-with-gbk)
+   ("C-x U"   revert-buffer-with-coding-system-no-confirm-sb)))
+
+(defun count-brf-lines (&optional is-fun)
+  "显示当前buffer或region或函数的行数和字符数"
+  (interactive "P")
+  (let (min max)
+    (if is-fun
+        (save-excursion
+          (beginning-of-defun) (setq min (point))
+          (end-of-defun) (setq max (point))
+          (message "当前函数%s内共有%d行, %d个字符" (which-function) (count-lines min max) (- max min)))
+      (if mark-active
+          (progn
+            (setq min (min (point) (mark)))
+            (setq max (max (point) (mark))))
+        (setq min (point-min))
+        (setq max (point-max)))
+      (if (or (= 1 (point-min)) mark-active)
+          (if mark-active
+              (message "当前region内共有%d行, %d个字符" (count-lines min max) (- max min))
+            (message "当前buffer内共有%d行, %d个字符" (count-lines min max) (- max min)))
+        (let ((nmin min) (nmax max))
+          (save-excursion
+            (save-restriction
+              (widen)
+              (setq min (point-min))
+              (setq max (point-max))))
+          (message "narrow下buffer内共有%d行, %d个字符, 非narrow下buffer内共有%d行, %d个字符"
+                   (count-lines nmin nmax) (- nmax nmin) (count-lines min max) (- max min)))))))
+(eal-define-keys-commonly
+ global-map
+ `(("C-x l" count-brf-lines)
+   ("C-x L" (lambda () (interactive) (count-brf-lines t)))))
+
+(defun switch-to-scratch ()
+  "切换到*scratch*"
+  (interactive)
+  (let ((buffer (get-buffer-create "*scratch*")))
+    (switch-to-buffer buffer)
+    (unless (equal major-mode 'lisp-interaction-mode)
+      (lisp-interaction-mode))))
+(global-set-key (kbd "C-x s") 'switch-to-scratch)
+
+(defun visit-.emacs ()
+  "访问.emacs文件"
+  (interactive)
+  (find-file (concat "~/" ".emacs")))
+(global-set-key (kbd "C-x E") 'visit-.emacs)
+
+;; grep
+(require 'grep-settings)
+
+;; ack-grep, grep纯perl的代替品
+(require 'full-ack-settings)
+
+(eal-define-keys-commonly
+ global-map
+ `(("M-r"     query-replace-sb)
+   ("M-%"     query-replace-sb)
+   ("ESC M-%" query-replace-regexp-sb)
+   ("ESC M-r" query-replace-regexp-sb)
+   ("C-x M-r" query-replace-regexp-sb)
+   ("M-z"     zap-to-char-sb)
+   ("C-j"     goto-line)))
+
+;; 返回到最近去过的地方
+(require 'recent-jump-settings)
+
+;; 统计命令使用频率
+(require 'command-frequence)
+
+;; Emacs中的包管理器
+;;(require 'package)
+;;(package-initialize)
+
+(require 'auto-install)
+(setq auto-install-directory (concat my-emacs-lisps-path "auto-install"))
+
+(unless mswin
+  (defun install-.emacs ()
+    (interactive)
+    (shell-command (concat my-emacs-path "install.emacs.sh")))
+
+  (add-hook 'kill-emacs-hook 'install-.emacs))
+
+(require 'ioccur)
+
+;; 可以把光标由方块变成一个小长条
+(require 'bar-cursor)
+
+;;快速进入某一目录{{{
+(defun goto-my-emacs-lisps-dir ()
+  "Goto `my-emacs-lisps-path'."
+  (interactive)
+  (dired my-emacs-lisps-path))
+(defun goto-my-default-dir()
+  "Goto `my-emacs-default-path'."
+  (interactive)
+  (dired my-emacs-default-path))
+(defun goto-my-emacs-my-lisps-dir ()
+  "Goto `my-emacs-my-lisps-path'."
+  (interactive)
+  (dired my-emacs-my-lisps-path))
+(defun goto-my-emacs-dir ()
+  "Goto `my-emacs-path'."
+  (interactive)
+  (dired my-emacs-path))
+(defun goto-my-home-dir ()
+  "Goto my home directory."
+  (interactive)
+  (dired "~"))
+(define-key-list
+  global-map
+  `(("C-x G l" goto-my-emacs-lisps-dir)
+    ("C-x G m" goto-my-emacs-my-lisps-dir)
+    ("C-x G e" goto-my-emacs-dir)
+    ("C-x G d" goto-my-default-dir)
+    ("C-x M-H" goto-my-home-dir)))
+;}}}
+(define-key global-map (kbd "C-x M-c") 'describe-char)
+
+;; 启动Emacs的时候最大化Emacs
+(require 'maxframe-settings)
+
+(defun dos2unix ()
+  "dos2unix on current buffer."
+  (interactive)
+  (set-buffer-file-coding-system 'unix))
+
+(defun unix2dos ()
+  "unix2dos on current buffer."
+  (interactive)
+  (set-buffer-file-coding-system 'dos))
+
+(define-key global-map (kbd "C-x M-D") 'dos2unix)
+(define-key global-map (kbd "C-x C-v") 'vip-mode) ;;进入vi-mode
+
+;; Emacs才是世界上最强大的IDE － 智能的改变光标形状
+(require 'cursor-change)
+(cursor-change-mode 1)
+
+;;Copy file name {{{
+(defun copy-file-name (&optional full)
+  "Copy file name of current-buffer.
+If FULL is t, copy full file name."
+  (interactive "P")
+  (let ((file (buffer-name)))
+    (if full
+        (setq file (expand-file-name file)))
+    (kill-new file)
+    (message "File `%s' copied." file)))
+(eal-define-keys
+ `(emacs-lisp-mode-map lisp-interaction-mode-map java-mode-map sh-mode-map
+                       c-mode-base-map text-mode-map ruby-mode-map html-mode-map
+                       java-mode-map conf-javaprop-mode-map conf-space-mode-map
+                       python-mode-map)
+ `(("C-c M-C" copy-file-name)))
+;;}}}
+
+;; for javascript file
+;;(autoload 'javascript-mode "javascript" nil t)
+;;(add-to-list 'auto-mode-alist '("\\.js\\'" . javascript-mode))
+
+;; Emacs才是世界上最强大的IDE － 用Emaci阅读文件
+(require 'emaci-settings)
+
+;; org是一个非常强大的GTD工具
+(require 'org-settings)
+
+;; 关闭buffer的时候, 如果该buffer有对应的进程存在, 不提示, 烦
+(delq 'process-kill-buffer-query-function kill-buffer-query-functions)
+
+;;org mode open file {{{
+(autoload 'org-open-file "org"
+  "Open the file at PATH.
+First, this expands any special file name abbreviations.  Then the
+configuration variable `org-file-apps' is checked if it contains an
+entry for this file type, and if yes, the corresponding command is launched.
+
+If no application is found, Emacs simply visits the file.
+
+With optional prefix argument IN-EMACS, Emacs will visit the file.
+With a double \\[universal-argument] \\[universal-argument] \
+prefix arg, Org tries to avoid opening in Emacs
+and to use an external application to visit the file.
+
+Optional LINE specifies a line to go to, optional SEARCH a string
+to search for.  If LINE or SEARCH is given, the file will be
+opened in Emacs, unless an entry from org-file-apps that makes
+use of groups in a regexp matches.
+If the file does not exist, an error is thrown.")
+
+(defun open-file-with-app (file)
+  "Open file with appropriate application."
+  (interactive "fFile to open: ")
+  (org-open-file file))
+
+(defun open-current-file-with-app ()
+  "Open current file with appropriate application."
+  (interactive)
+  (open-file-with-app buffer-file-name))
+
+(eal-define-keys-commonly
+ global-map
+ `(("C-x M-O" open-current-file-with-app)))
+;;}}} 
+;;(require 'session-settings) ;; session,可以保存很多东西，例如输入历史(像搜索、打开文件等的输入)、
+(require 'cc-mode)
+;; 没有任中任何区域时，注释、反注释作用于当前行，否则作用于
+;; 选中区域
+(defadvice comment-or-uncomment-region (before slickcomment activate compile)
+  "When called interactively with no active region, toggle comment on current line instead."
+  (interactive
+   (if mark-active (list (region-beginning) (region-end))
+     (list (line-beginning-position)
+           (line-beginning-position 2)))))
+(define-key c-mode-base-map (kbd "C-c C-c") 'comment-or-uncomment-region)
+;;习惯设置，Home键设定光标到文件开头
+(global-set-key [(home)] 'beginning-of-buffer)
+;;习惯设置，End键设定光标到文件结尾
+(global-set-key [(end)] 'end-of-buffer)
+
+(require 'semantic-tag-folding nil 'noerror)
+(global-semantic-tag-folding-mode 1)
+
+;;折叠{{{
+(define-key semantic-tag-folding-mode-map (kbd "C-c -") 'semantic-tag-folding-fold-block)
+(define-key semantic-tag-folding-mode-map (kbd "C-c =") 'semantic-tag-folding-show-block)
+(define-key semantic-tag-folding-mode-map (kbd "C-_") 'semantic-tag-folding-fold-all)
+(define-key semantic-tag-folding-mode-map (kbd "C-+") 'semantic-tag-folding-show-all)
+;;}}}
+(setq  tab-width  4) 
+
+;; goto-char like vim's f{{{
+(defun wy-go-to-char (n char)
+  "Move forward to Nth occurence of CHAR. Typing `wy-go-to-char-key' again will move forwad to the next Nth occurence of CHAR."
+  (interactive "p\ncGo to char: ")
+  (search-forward (string char) nil nil n)
+  (while (char-equal (read-char) char)
+    (search-forward (string char) nil nil n))
+  (setq unread-command-events (list last-input-event)))
+(define-key global-map (kbd "C-0") 'wy-go-to-char)	;; 跳转函数，类似vi的f 
+;;}}}
+
+;;{{{M-加数字键所有快捷方式 
+(global-set-key (kbd "M-5") 'iwb) ;格式化整个文件
+(defun iwb ()
+  "indent whole buffer"
+  (interactive)
+  (delete-trailing-whitespace)
+  (indent-region (point-min) (point-max) nil))
+(global-set-key (kbd "M-4") 'highlight-changes-mode) ;;highlight changes 
+	;;;; 各窗口间切换 键映射有问题
+	(global-set-key [M-left] 'windmove-left)
+	(global-set-key [M-right] 'windmove-right)
+	(global-set-key [M-up] 'windmove-up)
+	(global-set-key [M-down]'windmove-down)
+;;}}}
+
+;;{{{F功能键所有快捷键
+;;F2 书签功能
+(global-set-key (kbd "<f5>") 'smart-compile)
+(global-set-key [f6] 'quick-debug)
+(global-set-key [(f7)] 'open-eshell-other-buffer)
+(global-set-key [C-f7] 'eshell) ;;f7就是另开一个buffer然后打开shell，C-f7则是在当前的buffer打开shell
+(global-set-key [(f8)] 'speedbar)
+(global-set-key [f9] 'ecb-activate)
+(global-set-key [C-f9] 'ecb-deactivate)
+(global-set-key [(f10)] 'loop-alpha)  ;;注意这行中的F8 , 可以改成你想要的按键  
+(global-set-key [f11] 'text-scale-decrease) ;字体改变大小
+(global-set-key [C-f11] 'text-scale-increase)
+(global-set-key [f12] 'menu-bar-mode);;菜单栏
+(global-set-key [(control tab)] 'other-window)
+;;(global-set-key [C-=] 'text-default-global)
+;;}}}
+
+;; mode 下的移动按键，移动非常方便。
+;;(global-set-key (kbd "C-c v") 'view-mode)
+
+;;...
+(load-library "multi-gud")
+(load-library "multi-gdb-ui.el")
+;;;;;改变emacs标题栏的标题
+(setq frame-title-format "%b@Emacs                                                      Happy Hacking -- Crazybaby") 
+;(setq frame-title-format
+;      `((:eval
+;         (make-string 
+;          (/ (- (frame-width)
+;                (length (format-mode-line my-frame-title-format))) 2)
+;          ? ))
+;        ,my-frame-title-format))
+
+(add-to-list 'load-path "E:/emacs/.emacs.d/cscope/contrib/xcscope") ;;@@
+(eval-after-load "semantic-c" ;;@@@
+  '(dolist(d(list"/usr/include"
+                 "/usr/include/bits/"
+                 "/usr/include/linux"))
+     (semantic-add-system-include d)))
+
+;;分析存放目录
+(setq semanticdb-default-save-directory
+      (expand-file-name "~/.emacs.d/semanticdb"))
+
+;;头文件的查找目录定义好了，下面对 c-mode 做一些小小的定义：
+(add-hook 'c-mode-common-hook
+'(lambda()
+(require 'cedet)
+(ede-minor-mode t)
+;;;;以下3个按机器适用的强劲程度排列，最下面的对机器需求最低。三选一。
+(semantic-load-enable-code-helpers)
+(semantic-load-enable-minimum-features)
+;;;;这三个按键绑定按个人喜欢启用，除了第一个可以修改成自己喜欢的按键之外，另外两个都没有修改的意义。
+;;;;反正主要的补全就靠 semantic-complete-analyze-inline了，以后偷摸骗抢都靠它了。
+;;;;semantic-complete-self-inset也是调用semantic-complete-analyze-inline的。
+(local-set-key (kbd "M-/") 'semantic-complete-analyze-inline)
+;;(local-set-key "." 'semantic-complete-self-insert)
+;;(local-set-key ">" 'semantic-complete-self-insert)
+(c-toggle-auto-hungry-state 1)
+(c-set-style "K&R")))
+(defun my-indent-or-complete ()
+  (interactive)
+  (if (looking-at "\\>")
+      (hippie-expand nil)
+    (indent-for-tab-command))
+  )
+
+;;cscope
+(require 'xcscope)
+(require 'ecb-settings)
+(setq x-select-enable-clipboard t) ;;支持emacs和外部程序的粘贴
+
+;; 使用"emacs"命令在当前的emacs中打开文件
+(defun eshell/emacs (&rest args)
+  "Open a file in emacs. Some habits die hard."
+  (if (null args)
+      (bury-buffer)
+    (mapc #'find-file (mapcar #'expand-file-name (eshell-flatten-list (reverse args))))))
+
+;; doxygen {{{
+(require 'doxymacs)
+(add-hook 'c-mode-common-hook 'doxymacs-mode)
+(add-hook 'font-lock-mode-hook 'doxymacs-font-lock)
+;;}}}
+
+;;显示时间
+(display-time-mode 1)
+(setq display-time-24hr-format t)
+(setq display-time-day-and-date t)
+
+;;删除光标前的一个字符
+(global-set-key (kbd "C-;") 'backward-delete-char)
+
+(require 'cedet)
+(semantic-load-enable-semantic-debugging-helpers)
+(require 'eassist nil 'noerror)
+(require 'ido-settings) ;; 非常方便的切换buffer和打开文件
+(setq default-directory "E:/My-Projects/C++_Codes");;@@
+  
+(setq alpha-list '((85 55) (100 100)))  
+(defun loop-alpha ()  
+  (interactive)  
+  (let ((h (car alpha-list)))                  
+    ((lambda (a ab)  
+       (set-frame-parameter (selected-frame) 'alpha (list a ab))  
+       (add-to-list 'default-frame-alist (cons 'alpha (list a ab)))  
+       ) (car h) (car (cdr h)))  
+    (setq alpha-list (cdr (append alpha-list (list h))))  
+    )  
+)  
+(enable-visual-studio-bookmarks) ;;F2 加书签
+;;{{{智能编译
+(defun smart-compile()
+  ;;  "比较智能的C/C++编译命令
+  ;;如果当前目录有makefile则用make -k编译，否则，如果是
+  ;;处于c-mode，就用gcc -Wall编译，如果是c++-mode就用 g++ -Wall编译"
+  (interactive)
+  ;; 查找 Makefile
+  (let ((candidate-make-file-name '("makefile" "Makefile" "GNUmakefile"))
+        (command nil))
+    (if (not (null
+              (find t candidate-make-file-name :key
+                    '(lambda (f) (file-readable-p f)))))
+        (setq command "make -k ")
+      ;; 没有找到 Makefile ，查看当前 mode 是否是已知的可编译的模式
+      (if (null (buffer-file-name (current-buffer)))
+          (message "Buffer not attached to a file, won't compile!")
+        (if (eq major-mode 'c-mode)
+            (setq command
+                  (concat "gcc -Wall -o "      ;;你要明确知道自己的编译器在哪里,
+                          (file-name-sans-extension                          ;;这样,用你的gcc.exe的地址代替这里的D:/Dev-Cpp/bin/gcc.exe
+                           (file-name-nondirectory buffer-file-name)) ;;注意,这里的路径的斜杠和vista的习惯相反,你要注意修改
+                          " "
+                          (file-name-nondirectory buffer-file-name)
+                          " -g -lm "))
+          (if (eq major-mode 'c++-mode)
+              (setq command
+                    (concat "g++ -Wall -o " ;;还有这里的g++,也同gcc一样...
+                            (file-name-sans-extension
+                             (file-name-nondirectory buffer-file-name))
+                            " "
+                            (file-name-nondirectory buffer-file-name)
+                            " -g -lm "))
+            (message "Unknow mode, won't compile!")))))
+    (if (not (null command))
+        (let ((command (read-from-minibuffer "Compile command: " command)))
+          (compile command)))))
+;;}}}
+;;快速编译
+(defun quick-debug ()
+  "A quick debug funciton for C++"
+  (interactive)
+  (gdb (concat "gdb --annotate=1" " test"))) ;;调试 gdb --annotate=3
+;;打开eshell
+(defun open-eshell-other-buffer ()
+  "Open eshell in other buffer"
+  (interactive)
+  (split-window-vertically)
+  (eshell))
+
+
+
+
+;; 安装 abbrev{{{ 输入inc, 
+(mapc
+ (lambda (mode)
+   (define-abbrev-table mode '(
+                               ("inc" "" skeleton-include 1)
+                               )))
+ '(c-mode-abbrev-table c++-mode-abbrev-table))
+;; 输入 inc , 可以自动提示输入文件名称,可以自动补全.
+(define-skeleton skeleton-include
+  "generate include<>" ""
+  > "#include <"
+  (completing-read "Include File:"
+                   (mapcar #'(lambda (f) (list f ))
+                           (apply 'append
+                                  (mapcar
+                                   #'(lambda (dir)
+                                       (directory-files dir)) ;;@@
+                                   (list "C:/Program Files/CodeBlocks/MinGW/include"
+                                         "/usr/local/include"
+                                         "/usr/include/g++-3")))))
+  ">")
+;;}}}
+ 
+;;highlight-tail
+(require 'highlight-tail)
+(setq highlight-tail-colors
+          '(("black" . 0)
+            ("#bc2525" . 25)
+            ("black" . 66)))
+
+;;asp-mode
+;鼠标 copy cut paste
+(require 'mouse-copy)
+(global-set-key [M-down-mouse-1] 'mouse-drag-secondary-pasting)
+(global-set-key [M-S-down-mouse-1] 'mouse-drag-secondary-moving)
+
+
+
+ ;; 将文件模式和文件后缀关联起来。
+(setq auto-mode-alist
+      (append '((".py'" . python-mode)
+                (".s?html?'" . html-helper-mode)
+                (".asp'" . html-helper-mode)
+                (".phtml'" . html-helper-mode)
+                (".css'" . css-mode))
+              auto-mode-alist))
+
+;; 解决Eshell和shell的ascii码显示问题
+(setq ansi-color-for-comint-mode t)
+(customize-group 'ansi-colors)
+(kill-this-buffer)
+
+;;自动识别,h文件为C++-mode
+(setq auto-mode-alist
+  (append
+    '(("\\.C$"    . c++-mode)
+      ("\\.H$"    . c++-mode)
+      ("\\.cc$"   . c++-mode)
+      ("\\.hh$"   . c++-mode)
+      ("\\.c$"    . c-mode)
+      ("\\.h$"    . c-mode)
+      ("\\.m$"    . objc-mode)
+      ("\\.java$" . java-mode)
+     ) auto-mode-alist))
+
+;;irc config 
+;;{{{
+(setq erc-default-coding-system '(utf-8 . utf-8))
+(setq erc-nick "crazybaby"
+      erc-user-full-name "crazybaby") 
+(erc-autojoin-mode 1)
+(setq erc-autojoin-channels-alist
+      '(("#vim"   
+		  "#emacs"
+         "#emacs-cn"))) 
+
+(defun xwl-erc-auto-op ()
+  (let ((b (buffer-name)))
+    (when (string= b "#emacs-cn")
+      (erc-message "PRIVMSG" (concat "chanserv op " b)))))
+ 
+(add-hook 'erc-join-hook 'xwl-erc-auto-op) 
+
+;;对哪些感兴趣
+(erc-match-mode 1)
+(setq erc-keywords '("emms" "python"))
+(setq erc-pals '("rms")) 
+
+;;对哪些不感兴趣
+(setq erc-ignore-list nil)
+(setq erc-hide-list
+      '("JOIN" "PART" "QUIT" "MODE")) 
+
+
+(defun xwl-erc-text-matched-hook (match-type nickuserhost message)
+  "Shows a growl notification, when user's nick was mentioned.
+     If the buffer is currently not visible, makes it sticky."
+  (when (and (erc-match-current-nick-p nickuserhost message)
+             (not (string-match (regexp-opt '("Users"
+                                              "User"
+                                              "topic set by"
+                                              "Welcome to "
+                                              "nickname"
+                                              "identified"
+                                              "invalid"
+                                              ))
+                                message)))
+    (let ((s (concat "ERC: " (buffer-name (current-buffer)))))
+      (case system-type
+        ((darwin)
+         (xwl-growl s message))))))
+ 
+(add-hook 'erc-text-matched-hook 'xwl-erc-text-matched-hook)
+ 
+(defun xwl-growl (title message)
+  (start-process "growl" " growl" growlnotify-command title "-a" "Emacs")
+  (process-send-string " growl" message)
+  (process-send-string " growl" "\n")
+  (process-send-eof " growl")) 
+
+(erc-timestamp-mode 1)
+(setq erc-insert-timestamp-function 'erc-insert-timestamp-left)
+
+
+(require 'erc-log)
+(erc-log-mode 1)
+(setq erc-log-channels-directory "E:/emacs/irc_log/" ;;@@
+      erc-save-buffer-on-part t
+      erc-log-file-coding-system 'utf-8
+      erc-log-write-after-send t
+      erc-log-write-after-insert t)
+ 
+(unless (file-exists-p erc-log-channels-directory)
+  (mkdir erc-log-channels-directory t))
+;;}}}
+;;
+;;多窗口
+(require 'window-number)
+(autoload 'window-number-mode "window-number" t)
+(autoload 'window-number-meta-mode "windows-number" t)
+(window-number-mode 1)
+(window-number-meta-mode 1)

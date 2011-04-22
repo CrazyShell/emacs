@@ -1,0 +1,10 @@
+[23:28]*** Users on #@vim: @crazybaby
+       -zelazny.freenode.net- [freenode-info] channel trolls and no channel
+                        staff around to help? please check with freenode
+                        support: http://freenode.net/faq.shtml#gettinghelp
+       *** #@vim modes: +ns
+       *** #@vim was created on Wednesday 2011/04/20 23:28:19
+[23:30]ERC> /join vim
+[23:45]*** Users on #@vim: @crazybaby
+       *** #@vim modes: +ns
+       *** #@vim was created on Wednesday 2011/04/20 23:45:51

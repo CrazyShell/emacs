@@ -1,0 +1,16 @@
+[23:27]*** Users on #emacs-cn: @crazybaby
+       -zelazny.freenode.net- [freenode-info] channel flooding and no channel
+                        staff around to help? Please check with freenode
+                        support: http://freenode.net/faq.shtml#gettinghelp
+       -zelazny.freenode.net- *** Notice -- TS for #emacs-cn changed from
+                        1303313233 to 1264572239
+       *** #emacs-cn modes: +cnt
+       *** #emacs-cn was created on Wednesday 2010/01/27 14:03:59
+[23:28]ERC> /join @vim
+       <crazybaby1> #/join vim
+[23:30]<crazybaby1> asd
+[23:45]*** Users on #emacs-cn: @crazybaby
+       -wolfe.freenode.net- *** Notice -- TS for #emacs-cn changed from
+                        1303314351 to 1264572239
+       *** #emacs-cn modes: +cnt
+       *** #emacs-cn was created on Wednesday 2010/01/27 14:03:59

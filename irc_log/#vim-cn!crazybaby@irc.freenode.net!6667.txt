@@ -1,0 +1,8 @@
+[23:51]*** Users on #vim-cn: @crazybaby
+       -wolfe.freenode.net- *** Notice -- TS for #vim-cn changed from
+                        1303314711 to 1287235990
+       *** ChanServ (ChanServ@services.) has set the topic for #vim-cn: "May
+           :helpgrep be with you"
+       *** #vim-cn modes: +nt
+       *** #vim-cn was created on Saturday 2010/10/16 21:33:10
+[23:52]ERC> /join c
